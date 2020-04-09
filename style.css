@@ -1,0 +1,119 @@
+body{
+    display: flex;
+    justify-content: space-around;
+}
+  #bg{
+      position: fixed;
+      top: -400px;
+      z-index: -1;
+  }
+  #paper {
+    margin: 0 120px 0 120px;
+    background-color: white;
+    box-shadow: 0px 0px 10px;
+  }
+#name{
+  text-align: center;
+  margin-top: 15px;
+  font-family: 'Roboto Mono', monospace;
+}
+header hr{
+  width: 20%;
+}
+.carousel{
+    margin: 20px 80px 20px 80px;
+}
+.carousel img{
+    height: 500px;
+}
+  .cardholder{
+    margin: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+  .card{
+    float: left;
+    margin: 20px;
+  }
+  .card-title{
+    text-align: center;
+  }
+  .card-text{
+    margin: 5%;
+    text-align: center;
+  }
+  .card img{
+    margin-top: 20px;
+    height: 200px;
+    width: 200px;
+    border: solid black;
+    border-radius: 50%;
+  }
+  #hr1{
+    width: 90%;
+    margin: 20px 5% 20px 5%;
+  }
+  .exp-holder{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .exp-holder img{
+    margin: 0 5%
+  }
+  .exp-holder h3{
+    text-align: center
+  }
+  .exp{
+    width: 35%;
+    margin: 20px;
+  }
+  .edu{
+    width: 35%;
+    margin: 20px;
+  }
+  #CU{
+    border: solid #000080;
+    color: #000080;
+    border-radius: 8px;
+    padding: 3px;
+    text-decoration: none;
+  }
+  #CU:hover{
+    background-color: #000080;
+    color: white;
+  }
+  #EFA{
+    border: solid #ce4f4f;
+    color: #ce4f4f;
+    border-radius: 8px;
+    padding: 3px;
+    text-decoration: none;
+  }
+  #EFA:hover{
+    background-color: #ce4f4f;
+    color: white;
+  }
+  .exp-holder img{
+      height: 250px;
+      margin: auto;
+      vertical-align: middle;
+  }
+footer{
+  border-top: 1px solid black;
+}
+  footer img{
+    height: 50px;
+    width: 50px;
+    float: right;
+    margin: 20px 30px 20px 0;
+  }
+  #myinfo p{
+    margin: 3px 20px;
+    font-size: smaller;
+  }
+  #credits{
+    font-size: x-small;
+    position: relative;
+  }

@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
 body{
     display: flex;
     justify-content: space-around;
+    background-color: #9966cc;
 }
   #bg{
       position: fixed;
-      top: -400px;
+      width: 100%;
+      background-color: #9966cc;
+      /* top: -400px; */
       z-index: -1;
   }
   #paper {
     margin: 0 120px 0 120px;
-    background-color: white;
+    background-color: #121212;
     box-shadow: 0px 0px 10px;
   }
 #name{
@@ -17,47 +21,97 @@ body{
   margin-top: 15px;
   font-family: 'Roboto Mono', monospace;
 }
-header hr{
-  width: 20%;
+header{
+  height: 170px;
+  padding: 40px;
+  background-color: #121212;
+  color: #e5e5e5;
+  font-family: 'Share Tech Mono', monospace;
 }
-.carousel{
-    margin: 20px 80px 20px 80px;
+.typewriter{
+  margin: auto;
+  top: 50%;
+  font-size: 200%;
+  width: 18em;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
 }
-.carousel img{
-    height: 500px;
+
+.cursor{
+  border-bottom: 3px #9966cc solid;
+  width: 20px;
+  position: absolute;
+  top: 34px;
+  right: -5px;
 }
-  .cardholder{
-    margin: 0px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
+
+.type-anim{
+  animation:
+    typewriterDraw 3s 1s steps(42) 1 normal both;
+}
+
+.cursor-anim{
+  animation: 
+    blinkTextCursor 500ms steps(42,end) infinite normal;
+}
+
+@keyframes typewriterDraw{
+  from{
+    width: 0;
   }
-  .card{
-    float: left;
-    margin: 20px;
+  to{
+    width: 18em;
   }
-  .card-title{
-    text-align: center;
+}
+@keyframes blinkTextCursor{
+  from{
+    border-bottom-color: #9966cc;
   }
-  .card-text{
-    margin: 5%;
-    text-align: center;
+  to{
+    border-bottom-color: transparent;
   }
-  .card img{
-    margin-top: 20px;
-    height: 200px;
-    width: 200px;
-    border: solid black;
-    border-radius: 50%;
-  }
-  #hr1{
-    width: 90%;
-    margin: 20px 5% 20px 5%;
-  }
-  .exp-holder{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+}
+.cardholder{
+  margin: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+.card{
+  float: left;
+  border-radius: 10px;
+  margin: 20px;
+  background-color: gray;
+  box-shadow: 0px 2px 8px black;
+}
+.card-title{
+  text-align: center;
+}
+.card-text{
+  margin: 5%;
+  text-align: center;
+}
+.card img{
+  margin-top: 20px;
+  height: 200px;
+  width: 200px;
+  border: 2px solid #9966cc;
+  border-radius: 50%;
+  box-shadow: 0px 2px 8px black;
+}
+#hr1{
+  width: 90%;
+  margin: 20px 5% 20px 5%;
+}
+.exp-holder{
+  color: gray;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.exp-holder h3{
+    color: #9966cc;
   }
   .exp-holder img{
     margin: 0 5%
@@ -82,7 +136,7 @@ header hr{
   }
   #CU:hover{
     background-color: #000080;
-    color: white;
+    color: #121212;
   }
   #EFA{
     border: solid #ce4f4f;
@@ -93,16 +147,16 @@ header hr{
   }
   #EFA:hover{
     background-color: #ce4f4f;
-    color: white;
+    color: #121212;
   }
   .exp-holder img{
-      height: 250px;
-      margin: auto;
-      vertical-align: middle;
+    height: 250px;
+    margin: auto;
+    vertical-align: middle;
   }
-footer{
-  border-top: 1px solid black;
-}
+  footer{
+    border-top: 1px solid black;
+  }
   footer img{
     height: 50px;
     width: 50px;
@@ -117,3 +171,42 @@ footer{
     font-size: x-small;
     position: relative;
   }
+ #contact{ 
+    width: 400px;
+    border: solid 2px #9966cc;
+    padding: 20px;
+    margin: 40px;
+    background-color: grey;
+    border-radius: 10px;
+  }
+  #contact button{
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
+    background-color:#ffffff;
+    border-radius:6px;
+    border:1px solid #9966cc;
+    display:inline-block;
+    cursor:pointer;
+    color:#9966cc;
+    font-family:Arial;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+  }
+  #contact button:hover {
+    background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+    background-color:#f6f6f6;
+  }
+  #contact button:active {
+    position:relative;
+    top:1px;
+  }
+  .contactBox{
+    width: 350px;
+  }
+  #contact textarea{
+    height: 100px;
+  }
+          

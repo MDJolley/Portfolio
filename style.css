@@ -72,34 +72,38 @@ header{
     border-bottom-color: transparent;
   }
 }
-.cardholder{
-  margin: 0px;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-}
-.card{
-  float: left;
+.jumbotron{
+  padding: 0px;
+  margin: 50px;
+  background-color: #262626;
+  border: solid #9966cc 2px;
   border-radius: 10px;
+}
+.jumbotron-content{
+  padding: 50px;
+  text-align: center;
+  color: whitesmoke;
+}
+.jumbotron-content h3{
+  font-family: 'Share Tech Mono', monospace;
+}
+.jumbotron-pic{
+  overflow: hidden;
+  position: relative;
+  height: 180px;
+  width: 180px;
+  float: left;
   margin: 20px;
-  background-color: gray;
-  box-shadow: 0px 2px 8px black;
-}
-.card-title{
-  text-align: center;
-}
-.card-text{
-  margin: 5%;
-  text-align: center;
-}
-.card img{
-  margin-top: 20px;
-  height: 200px;
-  width: 200px;
-  border: 2px solid #9966cc;
+  box-shadow: 0 3px 10px;
+  border: solid #9966cc 2px;
   border-radius: 50%;
-  box-shadow: 0px 2px 8px black;
 }
+
+#work-history-pic{
+  float: right;
+}
+
+
 #hr1{
   width: 90%;
   margin: 20px 5% 20px 5%;
@@ -127,33 +131,80 @@ header{
     width: 35%;
     margin: 20px;
   }
-  #CU{
-    border: solid #000080;
-    color: #000080;
-    border-radius: 8px;
-    padding: 3px;
-    text-decoration: none;
-  }
-  #CU:hover{
-    background-color: #000080;
-    color: #121212;
-  }
-  #EFA{
-    border: solid #ce4f4f;
-    color: #ce4f4f;
-    border-radius: 8px;
-    padding: 3px;
-    text-decoration: none;
-  }
-  #EFA:hover{
-    background-color: #ce4f4f;
-    color: #121212;
-  }
-  .exp-holder img{
-    height: 250px;
-    margin: auto;
-    vertical-align: middle;
-  }
+ .school{
+   font-weight: bold;
+   font-style: normal;
+   text-decoration: none;
+   color: white;
+ }
+ .school:hover{
+   text-decoration: underline;
+   font-weight: bold;
+   font-style: normal;
+   color: white;
+ }
+.projects{
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+#my-projects{
+  font-family: 'Share Tech Mono';
+  margin-left: 100px;
+  color: #9966cc;
+}
+ .card {
+   background-color: #121212;
+  margin: 40px;
+  width: 300px;
+  height: 300px;
+  perspective: 500px;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+
+  transition: transform 1s;
+  transform-style: preserve-3d;
+}
+.front{
+  background-color: black;
+}
+.card img{
+  position: relative;
+  width: 300px;
+  height: 300px;
+  top: -11px;
+}
+
+.card:hover .content {
+  transform: rotateY( 180deg ) ;
+  transition: transform 0.5s;
+}
+
+.front,
+.back {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  line-height: 300px;
+  font-size: 60px;
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.back {
+  background: black;
+  transform: rotateY( 180deg );
+}
+
+
+
+
+
   footer{
     border-top: 1px solid black;
   }
@@ -172,17 +223,24 @@ header{
     position: relative;
   }
  #contact{ 
+   color: white;
     width: 400px;
     border: solid 2px #9966cc;
     padding: 20px;
     margin: 40px;
-    background-color: grey;
+    background-color: #262626;
     border-radius: 10px;
   }
+  #contact h3{
+    font-family: 'Share Tech Mono', monospace;
+  }
+  #contact label{
+    margin: 5px;
+  }
   #contact button{
-    box-shadow:inset 0px 1px 0px 0px #ffffff;
-    background:linear-gradient(to bottom, #ffffff 5%, #f6f6f6 100%);
-    background-color:#ffffff;
+    margin: 8px;
+    margin-bottom: 0;
+    background-color:#262626;
     border-radius:6px;
     border:1px solid #9966cc;
     display:inline-block;
@@ -192,12 +250,12 @@ header{
     font-size:15px;
     font-weight:bold;
     padding:6px 24px;
+    font-weight: bold;
     text-decoration:none;
-    text-shadow:0px 1px 0px #ffffff;
   }
   #contact button:hover {
-    background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
-    background-color:#f6f6f6;
+    background-color:#9966cc;
+    color: #262626;
   }
   #contact button:active {
     position:relative;

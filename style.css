@@ -154,7 +154,7 @@ header{
   color: #9966cc;
 }
  .card {
-   background-color: #121212;
+   background-color: transparent;
   margin: 40px;
   width: 300px;
   height: 300px;
@@ -165,19 +165,24 @@ header{
   position: relative;
   width: 100%;
   height: 100%;
-  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  /* box-shadow: 0 0 15px rgba(0,0,0,0.1); */
 
   transition: transform 1s;
   transform-style: preserve-3d;
 }
 .front{
   background-color: black;
+  overflow: hidden;
+}
+.card a{
+  width: 100%;
+  height: 100%;
 }
 .card img{
   position: relative;
-  width: 300px;
+  width: 100%;
   height: 300px;
-  top: -11px;
+  top: -3px;
 }
 
 .card:hover .content {
@@ -190,81 +195,89 @@ header{
   position: absolute;
   height: 100%;
   width: 100%;
-  line-height: 300px;
-  font-size: 60px;
+  /* font-size: 60px; */
   border-radius: 5px;
   backface-visibility: hidden;
+}
+.back p{
+  padding: 20px;
+  padding-top: auto;
+  padding-bottom: auto;
+  color: white;
+
 }
 
 .back {
   background: black;
   transform: rotateY( 180deg );
+  word-wrap: normal;
+  padding: 10px;
 }
 
 
 
 
 
-  footer{
-    border-top: 1px solid black;
-  }
-  footer img{
-    height: 50px;
-    width: 50px;
-    float: right;
-    margin: 20px 30px 20px 0;
-  }
-  #myinfo p{
-    margin: 3px 20px;
-    font-size: smaller;
-  }
-  #credits{
-    font-size: x-small;
-    position: relative;
-  }
- #contact{ 
-   color: white;
-    width: 400px;
-    border: solid 2px #9966cc;
-    padding: 20px;
-    margin: 40px;
-    background-color: #262626;
-    border-radius: 10px;
-  }
-  #contact h3{
-    font-family: 'Share Tech Mono', monospace;
-  }
-  #contact label{
-    margin: 5px;
-  }
-  #contact button{
-    margin: 8px;
-    margin-bottom: 0;
-    background-color:#262626;
-    border-radius:6px;
-    border:1px solid #9966cc;
-    display:inline-block;
-    cursor:pointer;
-    color:#9966cc;
-    font-family:Arial;
-    font-size:15px;
-    font-weight:bold;
-    padding:6px 24px;
-    font-weight: bold;
-    text-decoration:none;
-  }
-  #contact button:hover {
-    background-color:#9966cc;
-    color: #262626;
-  }
-  #contact button:active {
-    position:relative;
-    top:1px;
-  }
-  .contactBox{
-    width: 350px;
-  }
-  #contact textarea{
-    height: 100px;
-  }
+footer{
+ border-top: 1px solid black;
+}
+footer img{
+  height: 50px;
+  width: 50px;
+  float: right;
+  margin: 20px 30px 20px 0;
+}
+#myinfo p{
+  margin: 3px 20px;
+  font-size: smaller;
+}
+#credits{
+  font-size: x-small;
+  position: relative;
+}
+#contact{ 
+ color: white;
+  width: 400px;
+  border: solid 2px #9966cc;
+  padding: 20px;
+  margin: 40px;
+  background-color: #262626;
+  border-radius: 10px;
+}
+#contact h3{
+  font-family: 'Share Tech Mono', monospace;
+}
+#contact label{
+  margin: 5px;
+}
+#contact button{
+  margin: 8px;
+  margin-bottom: 0;
+  background-color:#262626;
+  border-radius:6px;
+  border:1px solid #9966cc;
+  display:inline-block;
+  cursor:pointer;
+  color:#9966cc;
+  font-family:Arial;
+  font-size:15px;
+  font-weight:bold;
+  padding:6px 24px;
+  font-weight: bold;
+  text-decoration:none;
+}
+#contact button:hover {
+  background-color:#9966cc;
+  color: #262626;
+}
+#contact button:active {
+  position:relative;
+  top:1px;
+}
+.contactBox{
+  width: 350px;
+}
+#contact textarea{
+  height: 100px;
+}
           
